@@ -1,0 +1,26 @@
+/* 
+                         custom properties 
+*/
+
+:root {
+  /* 
+      !!  color scheme  !!
+    */
+
+  --squadPage-white: #ffffff;
+  --squadPage-light-grey: #f7f7f8;
+  --squadPage-blue: #007afe;
+}
+
+@media screen (min-width: 30em) {
+}
+
+/* medium screens */
+
+@media (min-width: 64em) {
+}
+
+/* bigger screens */
+
+@media (min-width: 90em) {
+}
