@@ -15,17 +15,195 @@
   /* 
       !!  typografie  !!
   */
+
+  --squadPage-primary-font: 500 16px "Poppins", sans-serif;
 }
 
-@media screen (min-width: 30em) {
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-/* medium screens */
+/*                                  
+                                        MOBILE FIRST: small phones - iphone 8/se NEW version
+*/
+
+main {
+  width: 100%;
+
+  display: grid;
+  grid:
+    "sidebar" 10%
+    "content" 1fr
+    / 1fr;
+  gap: 25px 0px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  margin: 10px 10px 10px 10px;
+}
+
+.member {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member .member-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
+.member .member-info h2 {
+  font: var(--squadPage-primary-font);
+  width: 150px;
+}
+
+/*                                  
+                                        MOBLE FIRST: bigger phones: iphone X ^^
+*/
+
+@media (min-width: 24em) {
+  main {
+    width: 100%;
+
+    display: grid;
+    grid:
+      "sidebar" 10%
+      "content" 1fr
+      / 1fr;
+    gap: 25px 0px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .member {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .member .member-info img {
+    width: 175px;
+    height: 175px;
+    border-radius: 10%;
+  }
+
+  .member .member-info h2 {
+    font: var(--squadPage-primary-font);
+    width: 175px;
+  }
+}
+
+/*                                  
+                                        medium screens 
+*/
+
+@media (min-width: 40em) {
+  main {
+    width: 100%;
+
+    display: grid;
+    grid:
+      "sidebar topbar topbar topbar" 100px
+      "sidebar content content content" 1fr
+      "sidebar content content content" 1fr
+      / 25% 1fr 1fr 1fr;
+    gap: 25px 0px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: #c5c5c5;
+  }
+
+  .topbar {
+    grid-area: topbar;
+    background: #1f1f1f;
+  }
+
+  .content {
+    grid-area: content;
+    margin: 50px 30px 50px 50px;
+  }
+
+  .member {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .member .member-info img {
+    width: 210px;
+    height: 210px;
+    border-radius: 10%;
+  }
+
+  .member .member-info h2 {
+    font: var(--squadPage-primary-font);
+    width: 210px;
+  }
+}
+
+/*                                  
+                                        BIGGER screens 
+*/
 
 @media (min-width: 64em) {
-}
+  main {
+    width: 100%;
 
-/* bigger screens */
+    display: grid;
+    grid:
+      "sidebar topbar topbar topbar" 5%
+      "sidebar content content content" 1fr
+      "sidebar content content content" 1fr
+      / 15% 1fr 1fr 1fr;
+    gap: 25px 0px;
+  }
 
-@media (min-width: 90em) {
+  .sidebar {
+    grid-area: sidebar;
+    background: #c5c5c5;
+  }
+
+  .topbar {
+    grid-area: topbar;
+    background: #1f1f1f;
+  }
+
+  .content {
+    grid-area: content;
+    margin: 50px 50px 50px 150px;
+  }
+
+  .member {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .member .member-info img {
+    width: 230px;
+    height: 230px;
+    border-radius: 10%;
+  }
+
+  .member .member-info h2 {
+    font: var(--squadPage-primary-font);
+    width: 230px;
+  }
 }
