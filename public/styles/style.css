@@ -13,10 +13,28 @@
   --squadPage-black: #1f1f1f;
   --squadPage-red: #d60017;
   /* 
-      !!  typografie  !!
+      !!  typografie mobile   !!
   */
 
-  --squadPage-primary-font: 500 16px "Poppins", sans-serif;
+  --squadPage-font-spacing: 0.025em;
+
+  --squadPage-mobile-primary-font: 500 16px "Poppins", sans-serif;
+  --squadPage-mobile-h1-font: 600 24px "Poppins", sans-serif;
+  --squadPage-mobile-a-font: 400 15px "Poppins", sans-serif;
+
+  /* 
+      !!  typografie  tablet!! (40em)
+  */
+
+  --squadPage-tablet-primary-font: 500 20px "Poppins", sans-serif;
+  --squadPage-tablet-h1-font: 600 32px "Poppins", sans-serif;
+
+  /* 
+      !!  typografie  laptop!! 
+  */
+
+  --squadPage-laptop-primary-font: 500 20px "Poppins", sans-serif;
+  --squadPage-laptop-h1-font: 600 32px "Poppins", sans-serif;
 }
 
 * {
@@ -39,6 +57,19 @@ main {
   gap: 25px 0px;
 }
 
+h1 {
+  font: var(--squadPage-mobile-h1-font);
+  letter-spacing: var(--squadPage-font-spacing);
+  color: var(--squadPage-black);
+  margin-bottom: 30px;
+}
+
+hr {
+  border-top: 0.5px solid;
+  border-color: var(--squadPage-medium-grey);
+  margin: 25px 0px;
+}
+
 .sidebar {
   grid-area: sidebar;
 }
@@ -46,6 +77,16 @@ main {
 .content {
   grid-area: content;
   margin: 10px 10px 10px 10px;
+}
+
+.content span {
+  font: var(--squadPage-mobile-a-font);
+}
+
+.content a {
+  font: var(--squadPage-mobile-a-font);
+  text-decoration: none;
+  color: var(--squadPage-black);
 }
 
 .member {
@@ -61,7 +102,8 @@ main {
 }
 
 .member .member-info h2 {
-  font: var(--squadPage-primary-font);
+  font: var(--squadPage-mobile-primary-font);
+  color: var(--squadPage-black);
   width: 150px;
 }
 
@@ -103,7 +145,9 @@ main {
   }
 
   .member .member-info h2 {
-    font: var(--squadPage-primary-font);
+    font: var(--squadPage-mobile-primary-font);
+    letter-spacing: var(--squadPage-font-spacing);
+    color: var(--squadPage-black);
     width: 175px;
   }
 }
@@ -125,14 +169,19 @@ main {
     gap: 25px 0px;
   }
 
+  h1 {
+    font: var(--squadPage-tablet-h1-font);
+    letter-spacing: var(--squadPage-font-spacing);
+    color: var(--squadPage-black);
+    margin-bottom: 30px;
+  }
+
   .sidebar {
     grid-area: sidebar;
-    background: #c5c5c5;
   }
 
   .topbar {
     grid-area: topbar;
-    background: #1f1f1f;
   }
 
   .content {
@@ -153,7 +202,9 @@ main {
   }
 
   .member .member-info h2 {
-    font: var(--squadPage-primary-font);
+    font: var(--squadPage-tablet-primary-font);
+    letter-spacing: var(--squadPage-font-spacing);
+    color: var(--squadPage-black);
     width: 210px;
   }
 }
@@ -175,14 +226,19 @@ main {
     gap: 25px 0px;
   }
 
+  h1 {
+    font: var(--squadPage-laptop-h1-font);
+    letter-spacing: var(--squadPage-font-spacing);
+    color: var(--squadPage-black);
+    margin-bottom: 30px;
+  }
+
   .sidebar {
     grid-area: sidebar;
-    background: #c5c5c5;
   }
 
   .topbar {
     grid-area: topbar;
-    background: #1f1f1f;
   }
 
   .content {
@@ -203,7 +259,9 @@ main {
   }
 
   .member .member-info h2 {
-    font: var(--squadPage-primary-font);
+    font: var(--squadPage-laptop-primary-font);
+    letter-spacing: var(--squadPage-font-spacing);
+    color: var(--squadPage-black);
     width: 230px;
   }
 }
