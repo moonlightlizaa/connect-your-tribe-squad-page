@@ -10,6 +10,7 @@
   --squadPage-light-grey: #f5f5f5;
   --squadPage-medium-grey: #e6e6e7;
   --squadPage-dark-grey: #c5c5c5;
+  --squadPage-borders: #d4d4d4;
   --squadPage-black: #1f1f1f;
   --squadPage-red: #d60017;
   /* 
@@ -72,6 +73,7 @@ hr {
 
 .sidebar {
   grid-area: sidebar;
+  background-color: var(--squadPage-light-grey);
 }
 
 .content {
@@ -81,12 +83,18 @@ hr {
 
 .content span {
   font: var(--squadPage-mobile-a-font);
+  padding-right: 40px;
+  color: var(--squadPage-red);
 }
 
 .content a {
   font: var(--squadPage-mobile-a-font);
   text-decoration: none;
   color: var(--squadPage-black);
+}
+
+.sort-link::after {
+  content: url(/assets/icons/sort-arrow.svg);
 }
 
 .member {
@@ -112,32 +120,6 @@ hr {
 */
 
 @media (min-width: 24em) {
-  main {
-    width: 100%;
-
-    display: grid;
-    grid:
-      "sidebar" 10%
-      "content" 1fr
-      / 1fr;
-    gap: 25px 0px;
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-  }
-
-  .content {
-    grid-area: content;
-    margin: 10px 10px 10px 10px;
-  }
-
-  .member {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
   .member .member-info img {
     width: 175px;
     height: 175px;
@@ -151,7 +133,6 @@ hr {
     width: 175px;
   }
 }
-
 /*                                  
                                         medium screens 
 */
@@ -178,6 +159,9 @@ hr {
 
   .sidebar {
     grid-area: sidebar;
+    background-color: var(--squadPage-light-grey);
+    border-right: solid;
+    border-color: var(--squadPage-borders);
   }
 
   .topbar {
@@ -235,6 +219,7 @@ hr {
 
   .sidebar {
     grid-area: sidebar;
+    background-color: var(--squadPage-light-grey);
   }
 
   .topbar {
