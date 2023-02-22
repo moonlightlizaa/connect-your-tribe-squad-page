@@ -29,6 +29,7 @@
 
   --squadPage-tablet-primary-font: 500 20px "Poppins", sans-serif;
   --squadPage-tablet-h1-font: 600 32px "Poppins", sans-serif;
+  --squadPage-tablet-sidebar-font: 500 14px "Poppins", sans-serif;
 
   /* 
       !!  typografie  laptop!! 
@@ -175,12 +176,12 @@ article {
   }
 
   .sidebar img {
-    width: 50%;
-    margin: 30px 50px 0px 50px;
+    width: 60%;
+    margin: 30px 10px 0px 25px;
   }
 
   .search-container {
-    margin: 20px;
+    margin: 0px;
     padding: 25px 25px 0px 25px;
   }
 
@@ -194,10 +195,10 @@ article {
   .sidebar .squads {
     display: flex;
     margin: 20px;
-    padding: 25px 25px 0px 25px;
+    padding: 25px 10px 0px 5px;
 
     text-decoration: none;
-    font: var(--squadPage-laptop-sidebar-font);
+    font: var(--squadPage-tablet-sidebar-font);
     color: var(--squadPage-black);
     transition: background-color 0.5s;
   }
