@@ -34,8 +34,9 @@
       !!  typografie  laptop!! 
   */
 
-  --squadPage-laptop-primary-font: 500 20px "Poppins", sans-serif;
-  --squadPage-laptop-h1-font: 600 32px "Poppins", sans-serif;
+  --squadPage-laptop-primary-font: 500 18px "Poppins", sans-serif;
+  --squadPage-laptop-h1-font: 600 36px "Poppins", sans-serif;
+  --squadPage-laptop-sidebar-font: 500 16px "Poppins", sans-serif;
 }
 
 * {
@@ -203,7 +204,7 @@ hr {
 
     display: grid;
     grid:
-      "sidebar topbar topbar topbar" 5%
+      "sidebar topbar topbar topbar" 75px
       "sidebar content content content" 1fr
       "sidebar content content content" 1fr
       / 15% 1fr 1fr 1fr;
@@ -222,8 +223,56 @@ hr {
     background-color: var(--squadPage-light-grey);
   }
 
+  .sidebar img {
+    width: 50%;
+    margin: 30px 50px 0px 50px;
+  }
+
+  .search-container {
+    margin: 20px;
+    padding: 25px 25px 0px 25px;
+  }
+
+  form input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: 0.75px solid var(--squadPage-medium-grey);
+  }
+
+  .sidebar .squads {
+    display: flex;
+    margin: 20px;
+    padding: 25px 25px 0px 25px;
+
+    text-decoration: none;
+    font: var(--squadPage-laptop-sidebar-font);
+    color: var(--squadPage-black);
+    transition: background-color 0.5s;
+  }
+
+  .sidebar .squads:hover {
+    background-color: var(--squadPage-medium-grey);
+  }
+
+  .squads:nth-of-type(1)::before {
+    content: url(/assets/icons/play.svg);
+    padding-right: 10px;
+  }
+
+  .squads:nth-of-type(2)::before {
+    content: url(/assets/icons/menu.svg);
+    padding-right: 10px;
+  }
+
+  .squads:nth-of-type(3)::before {
+    content: url(/assets/icons/music.svg);
+    padding-right: 10px;
+  }
+
   .topbar {
-    grid-area: topbar;
+    border-color: var(--squadPage-borders);
+    border-bottom-style: solid;
   }
 
   .content {
@@ -248,5 +297,7 @@ hr {
     letter-spacing: var(--squadPage-font-spacing);
     color: var(--squadPage-black);
     width: 230px;
+
+    padding-top: 15px;
   }
 }

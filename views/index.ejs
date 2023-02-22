@@ -2,12 +2,24 @@
 
 <main>
   <section class="sidebar">
-    <img src="/assets/icons/FDND-Tribe.svg" />
-    <a href="/?squad=squad-a-2022">Squad A</a>
-    <a href="/?squad=squad-b-2022">Squad B</a>
-    <a href="/?squad=squat-c-2022">Squad C</a>
+    <section class="logo">
+      <a href="/?squad=squad-a-2022">
+        <img src="/assets/icons/FDND-Tribe.svg" />
+      </a>
+    </section>
+
+    <section class="search-container">
+      <form action="">
+        <input type="text" placeholder="Zoek" name="search" class="seach" />
+      </form>
+    </section>
+    <a href="/?squad=squad-a-2022" class="squads">Squad A</a>
+    <a href="/?squad=squad-b-2022" class="squads">Squad B</a>
+    <a href="/?squad=squat-c-2022" class="squads">Squad C</a>
   </section>
-  <section class="topbar"></section>
+  <section class="topbar">
+    <section class="topbar-main"></section>
+  </section>
   <section class="content">
     <h1>FDND <%= squad.name %></h1>
 
@@ -20,6 +32,12 @@
         class="sort-link"
       >
         Naam
+      </a>
+    </span>
+
+    <span>
+      <a href="/?squad=<%= squad.slug %>&orderBy=surname" class="sort-link">
+        Achternaam
       </a>
     </span>
 
@@ -38,9 +56,6 @@
         <% } %>
 
         <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-        <h2>
-          <a href="<%= member.website%>"> @<%= member.gitHubHandle%> </a>
-        </h2>
       </article>
       <% }) %>
     </section>
