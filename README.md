@@ -1,31 +1,40 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Squad Page
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+
+![squadpage](https://user-images.githubusercontent.com/106411511/221298690-72579dc5-ea49-4f7e-938f-7e8c51274162.jpg)
+
 
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Ik heb tijdens deze sprint een squad page gemaakt met een overzicht van de FDND squads. Dit was een opdracht waar we moesten samen werken, maar ook individueel. Iedereen heeft ook nog een eigen versie van de squad page 💗🫧
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+Er is voor dit project gebruik gemaakt van HTML, EJS , CSS en JavaScript. De website is responsive, dus je zou het ook kunnen gebruiken op de telefoon, tablet of andere apparaten.
 
-## Gebruik
+### Gebruikte tools
 
-## Bronnen
+Voor mijn Profile Card heb ik gebruikt gemaakt van de volgende tools: 
+
+* GoodNotes App op iPad
+* Figma
+* Visual Studio Code
+* Node.JS
+* Who Is API
+* Cyclic.sh
+* Pinterest
+* Behance
+
+## Het process
+
+Je kan het volledige process van het maken van de Squad Page kan je vinden in mijn Wiki! 
 
 ## Licentie
 
